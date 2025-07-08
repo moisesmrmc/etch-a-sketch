@@ -21,7 +21,6 @@ body{
 /* Quiero 16 cuadrados por cada fila, entonces el ancho será de ancho del viewport, menos los gaps (hay 1 gap menos que cuadros, 15) (100vw - (2*15))/ 16) */
 
 .square {
-    
-    background-color: lightgray;
+    background-color: rgb(211, 211, 211);
 }
 

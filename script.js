@@ -40,13 +40,19 @@ function crearCuadricula(num){
     const squares = Array.from(document.querySelectorAll(".square"));
     squares.forEach(square => {
         square.addEventListener("mouseenter", () => {
-            square.style.backgroundColor = "blue";
+            square.style.backgroundColor = randomColor();
         });
     });
 
 }
 
-
+//  función para generar color rgb random
+function randomColor(){
+    const r = Math.floor(Math.random()*256);
+    const g = Math.floor(Math.random()*256);
+    const b = Math.floor(Math.random()*256);
+    return `rgb(${r},${g},${b})`;
+}
 
 //  queremos hover effect que cuando pase por encima cambie el color
 //  empezamos cambiando el color, cosa que ya se... solucionamos los problemas 1 a 1
@@ -55,7 +61,7 @@ const squares = Array.from(document.querySelectorAll(".square"));
 //  por cada elemento ejecutamos el eventlistener con un "mouseenter" y cambiamos style.backgroundColor
 squares.forEach(square => {
     square.addEventListener("mouseenter", () => {
-        square.style.backgroundColor = "blue";
+        square.style.backgroundColor = randomColor(); 
     });
 });
 
