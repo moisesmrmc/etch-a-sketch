@@ -1,21 +1,27 @@
 body{
     padding: 0; margin: 0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
-.container{
+.container{ 
     display: flex;
     flex-wrap: wrap; /* para que los divs salten a la siguiente fila */
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    width: 960px;
+    height: 960px;
+    margin: 0 auto;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    margin:20px;
 }
 /* Quiero 16 cuadrados por cada fila, entonces el ancho será de ancho del viewport, menos los gaps (hay 1 gap menos que cuadros, 15) (100vw - (2*15))/ 16) */
 
 .square {
-    width: calc((100vw - (2px * 15)) / 16);
-    height: calc((100vh - (2px * 15)) / 16);
+    
     background-color: lightgray;
-
 }
 
